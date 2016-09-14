@@ -5,7 +5,7 @@
 
 .PARAMETER Path
   
-  The optional path to a non-standard database location for the Google Chrome Login Data database.  Generically found at <APPDATA>\Local\Google\Chrome\Default\Login Data
+  The optional path to a non-standard database location for the Google Chrome Login Data database.  Generically found at '<APPDATA>\Local\Google\Chrome\Default\Login Data'
 
 .EXAMPLE
   PS> .\Get-ChromePasswords
