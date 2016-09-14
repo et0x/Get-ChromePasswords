@@ -1,2 +1,7 @@
 # Get-ChromePasswords
-Get chrome passwords from chrome database in powershell
+```powershell
+Url                                                                                                    Username                  Password
+---                                                                                                    --------                  --------
+https://accounts.google.com/signin/challenge/sl/password                                               user1                     password
+```
+
