@@ -8,7 +8,7 @@
   The optional path to a non-standard database location for the Google Chrome Login Data database.  Generically found at <APPDATA>\Local\Google\Chrome\Default\Login Data
 
 .EXAMPLE
-  .\Get-ChromePasswords
+  PS> .\Get-ChromePasswords
 
   Url                                                                                                    Username                  Password
   ---                                                                                                    --------                  --------
