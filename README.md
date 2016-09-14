@@ -1,6 +1,5 @@
 # Get-ChromePasswords
 ```PowerShell
-<#
 .Synopsis
   Quickly retrieve Google Chrome passwords using powershell (please note this creates sqlite assemblies in your temp directory)
 
